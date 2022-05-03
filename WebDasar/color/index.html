@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Color</title>
+
+    <style>
+      /* Numeric Value */
+      .green {
+        /* Warna hijau menggunakan format RGB */
+        color: rgb(78, 231, 23);
+
+        /* Warna hijau Menggunakan format HEX */
+        color: #4ee717;
+
+        /* Warna hijau menggunakan format HSL (hanya di CSS3)*/
+        color: hsl(104, 82%, 50%);
+      }
+
+      /* Predefined Color Name */
+      .mixed {
+        color: black;
+        color: white;
+        color: orange;
+      }
+
+      /* Opacity */
+      div#opacity {
+        background-color: red;
+        opacity: 0.5;
+      }
+
+      .green-fade {
+        color: rgba(78, 231, 23, 0.5);
+        color: hsla(104, 82%, 50%, 0.5);
+        color: #4fe71780; /*ee merupakan digit tambahan untuk menerapkan opacity*/
+      }
+    </style>
+  </head>
+  <body>
+    <p class="green">
+      Est exercitationem occaecati qui inventore est qui. Ducimus sed neque. Et
+      sed qui.
+    </p>
+    <p class="mixed">
+      Est exercitationem occaecati qui inventore est qui. Ducimus sed neque. Et
+      sed qui.
+    </p>
+
+    <hr />
+    <div id="opacity">
+      <p>
+        Est exercitationem occaecati qui inventore est qui. Ducimus sed neque.
+        Et sed qui.
+      </p>
+    </div>
+    <p class="green-fade">
+      Est exercitationem occaecati qui inventore est qui. Ducimus sed neque. Et
+      sed qui.
+    </p>
+  </body>
+</html>
