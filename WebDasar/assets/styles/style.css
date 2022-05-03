@@ -4,6 +4,8 @@
 
 body {
   font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 h2,
@@ -75,4 +77,8 @@ nav a {
   font-weight: 400;
   text-decoration: none;
   color: white;
+}
+
+main {
+  padding: 20px;
 }
