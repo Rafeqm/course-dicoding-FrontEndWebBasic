@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Rounded Corner</title>
+
+    <style>
+      .rounded {
+        border-radius: 10px; /* all edges */
+
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 10px;
+
+        border-radius: 10px 5px 10px 5px; /* shorthand */
+      }
+      .box {
+        width: 30%;
+        border-color: deeppink;
+        border-style: solid;
+        padding: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box rounded">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus officiis
+        perspiciatis quidem ratione? Distinctio eos ex expedita iusto
+        necessitatibus velit, veritatis. Aliquid, debitis dignissimos in iusto
+        magnam nulla sed tempora.
+      </p>
+    </div>
+  </body>
+</html>
