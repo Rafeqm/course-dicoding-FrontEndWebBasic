@@ -8,6 +8,7 @@
     <title>Flexible Box Model</title>
 
     <style>
+      /* Flex Container */
       .container {
         display: flex;
 
@@ -26,11 +27,11 @@
         border: 2px solid black;
         border-radius: 10px;
       }
-
-      /* Flex Grow */
       .square {
         flex-grow: 1;
       }
+
+      /* Flex Grow */
       .first {
         flex-grow: 1;
       }
@@ -99,6 +100,39 @@
         border-radius: 10px;
         background-color: #fe899a;
       }
+
+      /* Flexible Basis */
+      * {
+        box-sizing: border-box;
+      }
+      .flex-basis-container {
+        width: 800px;
+        border: 2px solid black;
+        margin: 0 auto;
+      }
+      .flex-basis-column {
+        display: flex;
+        flex-direction: column;
+      }
+      .flex-basis-row {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+      }
+      .flex-basis-box {
+        flex-basis: 25%;
+        background-color: cornflowerblue;
+        border: 2px solid black;
+        padding: 40px;
+        text-align: center;
+        color: white;
+        font-size: 1.5em;
+      }
+      .double {
+        flex-grow: 2;
+        /* This also works
+        flex-basis: 50%; */
+      }
     </style>
   </head>
 
@@ -136,6 +170,24 @@
         <div class="inner-box"></div>
         <div class="inner-box"></div>
         <div class="inner-box"></div>
+      </div>
+    </div>
+
+    <hr />
+    <!-- Flexible Basis -->
+    <div class="flex-basis-container">
+      <div class="flex-basis-column">
+        <div class="flex-basis-row">
+          <div class="flex-basis-box">1</div>
+          <div class="flex-basis-box">2</div>
+          <div class="flex-basis-box">3</div>
+          <div class="flex-basis-box">4</div>
+        </div>
+        <div class="flex-basis-row">
+          <div class="flex-basis-box">5</div>
+          <div class="flex-basis-box">6</div>
+          <div class="flex-basis-box double">7</div>
+        </div>
       </div>
     </div>
   </body>
