@@ -8,15 +8,14 @@
     <title>Positioning</title>
 
     <style>
+      /* Perbedaan Static Flow dan Non-Static Flow */
       .box {
         width: 200px;
         height: 200px;
       }
-
       .first {
         background-color: #60d0a8;
       }
-
       .second {
         background-color: #6495ed;
         /* margin-top: 20px; */
@@ -24,16 +23,46 @@
         top: 30px;
         left: 10px;
       }
-
       .third {
         background-color: #ffa500;
+      }
+
+      /* Normal Flow */
+      h1 {
+        background-color: #aaaaaa;
+        padding: 30px;
+      }
+      p {
+        width: 450px;
       }
     </style>
   </head>
 
   <body>
+    <!-- Perbedaan Static Flow dan Non-Static Flow -->
     <div class="box first"></div>
     <div class="box second"></div>
     <div class="box third"></div>
+
+    <hr />
+    <!-- Normal Flow -->
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+      iusto non optio vel voluptas? Assumenda blanditiis consequatur doloribus
+      porro quasi similique vero voluptatibus. Adipisci, tenetur.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+      commodi consectetur dolore eligendi, esse fuga hic laboriosam nobis
+      nostrum, nulla omnis optio pariatur repellendus reprehenderit saepe, sit
+      soluta vel vero!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut
+      corporis deleniti doloremque et excepturi expedita labore libero, placeat,
+      quaerat rerum ullam vitae voluptate. Accusantium et explicabo qui tenetur
+      unde. Amet aperiam doloremque enim, expedita id illo minima porro quod.
+    </p>
   </body>
 </html>
