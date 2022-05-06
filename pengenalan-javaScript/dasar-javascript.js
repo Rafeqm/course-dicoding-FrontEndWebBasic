@@ -131,3 +131,13 @@ user = {
 
 console.log("Hallo, nama saya " + user.name.first + " " + user.name.last);
 console.log("Umur saya " + user.age + " tahun");
+
+// Assignment Operator
+let j = 10;
+let k = 5;
+
+j += k; // artinya -> x = x + y;
+j -= k; // artinya -> x = x - y;
+j *= k; // artinya -> x = x * y;
+j /= k; // artinya -> x = x / y;
+j %= k; // artinya -> x = x % y;
