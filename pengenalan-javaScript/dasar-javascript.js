@@ -244,3 +244,27 @@ function greeting(name, language) {
 
 let greetingMessage = greeting("Harry", "French");
 console.log(greetingMessage);
+
+/* Variabel Scope */
+// global variable, dapat diakses pada parent() dan child()
+const o = "o";
+
+function parent() {
+  // local variable, dapat diakses pada parent() dan child(), tetapi tidak dapat diakses diluar dari fungsi tersebut.
+  const p = "p";
+
+  function child() {
+    // local variable, dapat diakses hanya pada fungsi child().
+    const q = "q";
+  }
+}
+
+function multiply(num) {
+  total = num * num;
+  return total;
+}
+
+let total = 9;
+let number = multiply(20);
+
+console.log(total);
