@@ -205,3 +205,42 @@ for (let i = 0; i < users.length; i++) {
 for (const user of users) {
   console.log(user);
 }
+
+/* Function */
+function greeting() {
+  console.log("Good Morning!");
+}
+
+greeting();
+
+function greeting(name, language) {
+  if (language === "English") {
+    console.log("Good Morning " + name + "!");
+  } else if (language === "French") {
+    console.log("Bonjour " + name + "!");
+  } else {
+    console.log("Selamat Pagi " + name + "!");
+  }
+}
+
+greeting("Velma", "French");
+
+function multiply(a, b) {
+  return a * b;
+}
+
+let result = multiply(10, 2);
+console.log(result);
+
+function greeting(name, language) {
+  if (language === "English") {
+    return "Good Morning " + name + "!";
+  } else if (language === "French") {
+    return "Bonjour " + name + "!";
+  } else {
+    return "Selamat Pagi " + name + "!";
+  }
+}
+
+let greetingMessage = greeting("Harry", "French");
+console.log(greetingMessage);
