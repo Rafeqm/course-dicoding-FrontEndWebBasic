@@ -16,14 +16,14 @@ firstName = "Alda";
 console.log(firstName);
 
 // The controversial hoisting when using the 'var' keyword
-x = 100;
+yes = 100;
 var x;
-console.log(x);
+console.log(yes);
 
 // Always use the 'let' keyword instead
-y = 100;
+no = 100;
 let y;
-console.log(y); // ReferenceError: Cannot access 'y' before initialization
+console.log(no); // ReferenceError: Cannot access 'y' before initialization
 
 // This is a 'const'ant variable, so it can't be changed/reassigned
 const z = 100;
@@ -31,3 +31,65 @@ console.log(z);
 
 z = 200; // TypeError: Assignment to constant variable.
 console.log(z);
+
+/* Undefined */
+let a;
+console.log(typeof d);
+
+/* Numbers */
+let b = 10;
+console.log(typeof e);
+
+let c = 17.25;
+console.log(typeof d);
+
+/* Perhitungan aritmatika */
+let d = 12;
+let e = 9;
+
+console.log(d + e);
+console.log(d - e);
+console.log(d * e);
+console.log(d / e);
+console.log(d % e);
+
+/* Increment dan Decrement */
+let postfix = 5;
+console.log(postfix++);
+
+let prefix = 5;
+console.log(++prefix);
+
+/* Strings */
+let greet = "Hello";
+console.log(typeof greet);
+
+let moreGreet = greet + greet;
+console.log(moreGreet);
+
+/* Boolean */
+let yes = true;
+let no = false;
+
+console.log(typeof yes);
+console.log(typeof no);
+
+/* Operator komparasi */
+const f = 10;
+const g = 12;
+
+let isGreater = f > g;
+let isLess = f < g;
+
+console.log(isGreater);
+console.log(isLess);
+
+/* Null */
+let someLaterData = null;
+console.log(someLaterData);
+
+/* Dynamic typing */
+let x; // x merupakan undefined
+x = 1; // sekarang x merupakan number
+x = true; // sekarang x merupakan boolean
+x = "Harry"; // sekarang x merupakan string
