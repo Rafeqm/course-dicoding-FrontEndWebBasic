@@ -162,3 +162,29 @@ console.log(m > 15 && n > 10); // (false && true) -> false
 // OR operator
 console.log(m < 15 || n > 10); // (true || true) -> true
 console.log(m > 15 || n > 10); // (false || true) -> true
+
+/* If/Else Statement */
+if (x > 70) {
+  console.log(x);
+} else {
+  console.log("Nilai kurang dari 70");
+}
+
+let language = "English";
+let greeting = "Selamat Pagi!";
+
+if (language === "English") {
+  greeting = "Good Morning!";
+}
+
+console.log(greeting);
+
+language = "French";
+if (language === "English") {
+  greeting = "Good Morning!";
+} else if (language === "French") {
+  greeting = "Bonjour!";
+} else if (language === "Japanese") {
+  greeting = "Ohayogozaimasu!";
+}
+console.log(greeting);
