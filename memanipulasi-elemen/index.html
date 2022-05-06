@@ -16,19 +16,29 @@
 
     <script>
       let catImage = document.querySelector("#catImage");
+
       // Memanipulasi Atribut Elemen
       catImage.setAttribute("src", "https://i.ibb.co/55VG7vL/three-cat.jpg");
+
       // Mendapatkan Nilai Atribut
       console.log(catImage.getAttribute("src"));
+
       // Memanipulasi Konten Elemen
       let caption = document.querySelector("#caption");
       caption.innerHTML = "<em>Tiga Anak Kucing</em>";
+
       /* Berbeda ketika kita menggunakan innerText, nilai apapun yang terdapat
       pada properti ini adalah merupakan sebuah teks. Sehingga walaupun kita
       menginisialisasi teks yang merupakan sebuah tag html, maka teks tersebut
       akan tampil apa adanya tanpa terformat sebagai HTML.
       */
       // caption.innerText = "<em>Tiga Anak Kucing</em>";
+
+      // Membuat dan Menambahkan Elemen Baru
+      let newElement = document.createElement("p");
+      newElement.innerHTML =
+        'Anda menekan gambar kucing sebanyak <span id="count">0</span> kali';
+      document.body.appendChild(newElement);
     </script>
   </body>
 </html>
