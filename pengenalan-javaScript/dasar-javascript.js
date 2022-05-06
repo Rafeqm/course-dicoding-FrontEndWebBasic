@@ -268,3 +268,40 @@ let total = 9;
 let number = multiply(20);
 
 console.log(total);
+
+/* Browser Object */
+// mengakses method alert() pada window
+window.alert("Hello Browser!");
+
+// Kita juga bisa mengaksesnya seperti ini
+alert("Hello Browser!");
+
+const firstName = prompt("Siapa nama depanmu?");
+const lastName = prompt("Siapa nama belakangmu?");
+const bahasa = prompt("Bisa berbahasa apa?");
+
+const userX = {
+  name: {
+    first: firstName,
+    last: lastName
+  },
+  bahasa: bahasa
+};
+
+if (userX.bahasa === "English") {
+  alert("Nice to meet you " + userX.name.first + " " + userX.name.last + "!");
+} else if (userX.bahasa === "French") {
+  alert(
+    "Ravi de vous rencontrer " + userX.name.first + " " + userX.name.last + "!"
+  );
+} else if (userX.bahasa === "Japanese") {
+  alert("Hajimemashite, " + userX.name.first + " " + userX.name.last + "!");
+} else {
+  alert(
+    "Senang bertemu dengan Anda " +
+      userX.name.first +
+      " " +
+      userX.name.last +
+      "!"
+  );
+}
