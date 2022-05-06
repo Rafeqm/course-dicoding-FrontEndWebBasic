@@ -94,7 +94,7 @@ x = 1; // sekarang x merupakan number
 x = true; // sekarang x merupakan boolean
 x = "Harry"; // sekarang x merupakan string
 
-// Arrays
+/* Arrays */
 let myArray = ["Coklat", 42.5, 22, true, "Programming"];
 console.log(myArray);
 console.log(myArray[0]);
@@ -105,7 +105,7 @@ console.log(myArray[4]);
 console.log(myArray[5]);
 console.log("Panjang nilai myArray adalah " + myArray.length + ".");
 
-// Objek
+/* Objek */
 let object = { key1: "value1", key2: "value2", key3: "value3" };
 let user = {
   firstName: "Harry",
@@ -132,7 +132,7 @@ user = {
 console.log("Hallo, nama saya " + user.name.first + " " + user.name.last);
 console.log("Umur saya " + user.age + " tahun");
 
-// Assignment Operator
+/* Assignment Operator */
 let j = 10;
 let k = 5;
 
@@ -141,3 +141,24 @@ j -= k; // artinya -> x = x - y;
 j *= k; // artinya -> x = x * y;
 j /= k; // artinya -> x = x / y;
 j %= k; // artinya -> x = x % y;
+
+/* Logical and Comparison Operators */
+let m = 10;
+let n = 12;
+
+console.log(m < n);
+console.log(m > n);
+
+const aString = "10";
+const aNumber = 10;
+
+console.log(aString == aNumber); // true, karena nilainya sama-sama 10
+console.log(aString === aNumber); // false, karena walaupun nilainya sama, tetapi tipe datanya berbeda
+
+// AND operator
+console.log(m < 15 && n > 10); // (true && true) -> true
+console.log(m > 15 && n > 10); // (false && true) -> false
+
+// OR operator
+console.log(m < 15 || n > 10); // (true || true) -> true
+console.log(m > 15 || n > 10); // (false || true) -> true
