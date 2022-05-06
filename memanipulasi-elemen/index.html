@@ -39,6 +39,11 @@
       newElement.innerHTML =
         'Anda menekan gambar kucing sebanyak <span id="count">0</span> kali';
       document.body.appendChild(newElement);
+
+      // Menambahkan Aksi (Event) pada Elemen
+      catImage.addEventListener("click", function () {
+        document.querySelector("#count").innerText++;
+      });
     </script>
   </body>
 </html>
