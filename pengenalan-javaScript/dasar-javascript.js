@@ -188,3 +188,20 @@ if (language === "English") {
   greeting = "Ohayogozaimasu!";
 }
 console.log(greeting);
+
+/* Loop */
+// For loop
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+const users = ["Harry", "Ron", "Hermione", "Tom"];
+
+for (let i = 0; i < users.length; i++) {
+  console.log(users[i]);
+}
+
+// For of loop
+for (const user of users) {
+  console.log(user);
+}
