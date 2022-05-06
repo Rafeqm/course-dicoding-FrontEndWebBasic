@@ -93,3 +93,41 @@ let x; // x merupakan undefined
 x = 1; // sekarang x merupakan number
 x = true; // sekarang x merupakan boolean
 x = "Harry"; // sekarang x merupakan string
+
+// Arrays
+let myArray = ["Coklat", 42.5, 22, true, "Programming"];
+console.log(myArray);
+console.log(myArray[0]);
+console.log(myArray[1]);
+console.log(myArray[2]);
+console.log(myArray[3]);
+console.log(myArray[4]);
+console.log(myArray[5]);
+console.log("Panjang nilai myArray adalah " + myArray.length + ".");
+
+// Objek
+let object = { key1: "value1", key2: "value2", key3: "value3" };
+let user = {
+  firstName: "Harry",
+  lastName: "Potter",
+  age: 20,
+  isMuggle: false,
+  stuff: ["Wand", "Flying Car", "Owl"]
+};
+
+console.log("Hallo, nama saya " + user.firstName + " " + user.lastName);
+console.log("Umur saya " + user.age + " tahun");
+
+// firstName dan lastName dapat dikelompokan kembali dalam sebuah objek baru
+user = {
+  name: {
+    first: "Harry",
+    last: "Potter"
+  },
+  age: 20,
+  isMuggle: false,
+  stuff: ["Magic Wind", "Flying Car", "Owl"]
+};
+
+console.log("Hallo, nama saya " + user.name.first + " " + user.name.last);
+console.log("Umur saya " + user.age + " tahun");
