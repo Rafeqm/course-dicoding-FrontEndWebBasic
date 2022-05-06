@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Manipulating Attribute</title>
+  </head>
+  <body>
+    <figure>
+      <img
+        id="catImage"
+        src="https://i.ibb.co/9WT6LG6/two-three.jpg"
+        alt="three-cats"
+        width="600px"
+      />
+      <figcaption id="caption">Tiga Anak Kucing</figcaption>
+    </figure>
+
+    <script>
+      let catImage = document.querySelector("#catImage");
+      // Memanipulasi Atribut Elemen
+      catImage.setAttribute("src", "https://i.ibb.co/55VG7vL/three-cat.jpg");
+      // Mendapatkan Nilai Atribut
+      console.log(catImage.getAttribute("src"));
+      // Memanipulasi Konten Elemen
+      let caption = document.querySelector("#caption");
+      caption.innerHTML = "<em>Tiga Anak Kucing</em>";
+      /* Berbeda ketika kita menggunakan innerText, nilai apapun yang terdapat
+      pada properti ini adalah merupakan sebuah teks. Sehingga walaupun kita
+      menginisialisasi teks yang merupakan sebuah tag html, maka teks tersebut
+      akan tampil apa adanya tanpa terformat sebagai HTML.
+      */
+      // caption.innerText = "<em>Tiga Anak Kucing</em>";
+    </script>
+  </body>
+</html>
